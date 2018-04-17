@@ -1,8 +1,6 @@
-# ruby-getting-started
+# Active Storage Example App
 
-A barebones Rails app, which can easily be deployed to Heroku.
-
-This application supports the [Getting Started on Heroku with Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+An app that uses Active Storage file uploads and Previews
 
 ## Running Locally
 
