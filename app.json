@@ -4,7 +4,10 @@
   "image": "heroku/ruby",
   "repository": "https://github.com/heroku/active_storage_with_previews_example",
   "keywords": ["ruby", "rails" ],
-  "addons": ["heroku-postgresql"],
+  "addons": [
+    "heroku-postgresql",
+    "bucketeer:hobbyist"
+  ],
   "buildpacks": [
     "https://github.com/heroku/heroku-buildpack-activestorage-preview",
     "heroku/ruby"
