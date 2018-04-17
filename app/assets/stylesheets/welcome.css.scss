@@ -1,3 +1,12 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.no-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.no-bullet li {
+  padding: 0.75em 0;
+}

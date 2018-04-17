@@ -1,8 +1,13 @@
 {
-  "name": "Start on Heroku: Ruby",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
+  "name": "Active Storage Example App",
+  "description": "A barebones Rails app that uses Active Storage",
   "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
+  "repository": "https://github.com/heroku/active_storage_with_previews_example",
   "keywords": ["ruby", "rails" ],
-  "addons": ["heroku-postgresql"]
+  "addons": ["heroku-postgresql"],
+  "buildpacks": [
+    "https://github.com/heroku/heroku-buildpack-activestorage-preview",
+    "heroku/ruby"
+  ]
+
 }
