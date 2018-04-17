@@ -1,16 +1,20 @@
 # Active Storage Example App
 
-An app that uses Active Storage file uploads and Previews
+An app that uses Active Storage file uploads and Previews. For more information view the [devcenter documentation on Active Storage](https://devcenter.heroku.com/articles/active-storage-on-heroku).
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+> Note: This app uses a paid add-on for S3 storage.
 
 ## Running Locally
 
 Make sure you have Ruby installed.  Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) (formerly known as the Heroku Toolbelt).
 
 ```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ git clone https://github.com/heroku/active_storage_with_previews_example
+$ cd active_storage_with_previews_example
 $ bundle install
-$ bundle exec rake db:create db:migrate
+$ bin/rails db:create db:migrate
 $ heroku local
 ```
 
@@ -28,35 +32,6 @@ $ heroku open
 or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Docker
-
-The app can be run and tested using the [Heroku Docker CLI plugin](https://devcenter.heroku.com/articles/local-development-with-docker-compose).
-
-Make sure the plugin is installed:
-
-    heroku plugins:install heroku-docker
-
-Configure Docker and Docker Compose:
-
-    heroku docker:init
-
-And run the app locally:
-
-    docker-compose up web
-
-The app will now be available on the Docker daemon IP on port 8080.
-
-To work with the local database and do migrations, you can open a shell:
-
-    docker-compose run shell
-    bundle exec rake db:migrate
-
-You can also use Docker to release to Heroku:
-
-    heroku create
-    heroku docker:release
-    heroku open
 
 ## Documentation
 
