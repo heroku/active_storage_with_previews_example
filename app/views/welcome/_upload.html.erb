@@ -11,7 +11,7 @@
     </div>
   <% end %>
   <div class="form-group">
-    <%= form.file_field :attachment %><br>
+    <%= form.file_field :attachment, direct_upload: true %><br>
   </div>
   <div class="actions">
     <%= form.submit("Upload File", class: "btn btn-primary btn-lg") %>
